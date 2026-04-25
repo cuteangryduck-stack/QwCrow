@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QwCrow - Global Click Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0f0f;
+            color: #e0e0e0;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00ffcc, #00cc88);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .subtitle {
+            color: #00ffcc;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .counter-card {
+            background: #0d1515;
+            border: 1px solid #1a3a3a;
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .count-display {
+            font-size: 80px;
+            font-weight: bold;
+            color: #00ffcc;
+            font-family: monospace;
+            margin: 20px 0;
+        }
+
+        .click-btn {
+            background: #00ffcc;
+            color: #0a0f0f;
+            border: none;
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.15s;
+            margin: 10px;
+        }
+
+        .click-btn:hover {
+            background: #00cc88;
+            transform: scale(1.02);
+        }
+
+        .reset-btn {
+            background: transparent;
+            border: 1px solid #ff8866;
+            color: #ff8866;
+            padding: 10px 30px;
+            font-size: 14px;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .reset-btn:hover {
+            background: #ff8866;
+            color: #0a0f0f;
+        }
+
+        .status {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #555;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #00ffcc;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QwCrow</h1>
+        <div class="subtitle">Global Click Counter</div>
+
+        <div class="counter-card">
+            <div style="font-size: 14px; color: #888;">Total Clicks Worldwide</div>
+            <div class="count-display" id="countDisplay">0</div>
+            <button class="click-btn" id="clickBtn"></button>
+            <div>
+                <button class="reset-btn" id="resetBtn">Reset Counter</button>
+            </div>
+            <div class="status" id="statusText">Loading count...</div>
+        </div>
+
+        <div class="footer">
+            hi
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.0/dist/umd/sdk.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
