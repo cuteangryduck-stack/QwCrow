@@ -1,2 +1,4 @@
 # QwCrow
 A dynamic click counter with storage.
+### MY EMAIL WONT LOAD SO I CANT SIGN UP FOR APPWRITE
+AHHHHHHHHHHHHHHHHHHHHHHH
