@@ -1,5 +1,5 @@
 const APPWRITE_ENDPOINT = 'https://cloud.appwrite.io/v1';
-const APPWRITE_PROJECT_ID = 'YOUR_PROJECT_ID_HERE';
+const APPWRITE_PROJECT_ID = 'qwcrow';
 const APPWRITE_DATABASE_ID = 'qwcrow_db';
 const APPWRITE_COLLECTION_ID = 'counters';
 const APPWRITE_DOCUMENT_ID = 'global_click_count';
