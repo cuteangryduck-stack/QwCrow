@@ -1,4 +1,4 @@
 # QwCrow
 A dynamic click counter with storage.
-### MY EMAIL WONT LOAD SO I CANT SIGN UP FOR APPWRITE
+### appwrite is so annoying i cant figure out how to make a kv in its db
 AHHHHHHHHHHHHHHHHHHHHHHH
